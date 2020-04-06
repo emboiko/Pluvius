@@ -13,12 +13,11 @@ const forecast = (latitude, longitude, callback) => {
                 summary: body.daily.data[0].summary,
                 temperature: body.currently.temperature,
                 precipProbability: body.currently.precipProbability,
-                sunRise: new Date(body.daily.data[0].sunriseTime).toLocaleTimeString(),
-                sunSet: new Date(body.daily.data[0].sunsetTime).toLocaleTimeString()
+                sunRise: body.daily.data[0].sunriseTime,
+                sunSet: body.daily.data[0].sunsetTime
             });
         }
     });
 }
 
 module.exports = forecast;
-

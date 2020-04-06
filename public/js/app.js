@@ -33,8 +33,8 @@ form.addEventListener("submit", (event) => {
                 message2.textContent = data.forecast.summary;
                 message3.textContent = `Temp: ${data.forecast.temperature} °F`;
                 message4.textContent = `Precipitation Probability: ${data.forecast.precipProbability}%`;
-                message5.textContent = `Sunrise: ${data.forecast.sunRise}`;
-                message6.textContent = `Sunset: ${data.forecast.sunSet}`;
+                message5.textContent = `Sunrise: ${new Date(data.forecast.sunRise * 1000).toLocaleTimeString()}`;
+                message6.textContent = `Sunset: ${new Date(data.forecast.sunSet * 1000).toLocaleTimeString()}`;
             }
             btn.removeAttribute("disabled");
             search.focus();
