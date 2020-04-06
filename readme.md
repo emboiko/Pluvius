@@ -5,5 +5,5 @@
 https://pluvius.herokuapp.com/
 
 <div align="center">
-    <img src="https://i.imgur.com/evGHDWK.png">
+    <img src="https://i.imgur.com/qIrZzuz.png">
 </div>
