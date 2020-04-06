@@ -13,8 +13,8 @@ const forecast = (latitude, longitude, callback) => {
                 summary: body.daily.data[0].summary,
                 temperature: body.currently.temperature,
                 precipProbability: body.currently.precipProbability,
-                sunRise: new Date(body.daily.data[0].sunriseTime * 1000).toLocaleTimeString(),
-                sunSet: new Date(body.daily.data[0].sunsetTime * 1000).toLocaleTimeString()
+                sunRise: new Date(body.daily.data[0].sunriseTime).toLocaleTimeString(),
+                sunSet: new Date(body.daily.data[0].sunsetTime).toLocaleTimeString()
             });
         }
     });
