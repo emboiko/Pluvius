@@ -1,0 +1,22 @@
+{
+    "name": "pluvius",
+    "version": "1.0.0",
+    "description": "Simple weather app w/ geolocation & forecast",
+    "main": "index.js",
+    "scripts": {
+        "start": "node src/app.js",
+        "dev": "env-cmd -f ./config/dev.env nodemon src/app.js -e js,hbs"
+    },
+    "keywords": [],
+    "author": "emboiko",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "hbs": "^4.1.0",
+        "request": "^2.88.2"
+    },
+    "devDependencies": {
+        "env-cmd": "^10.1.0",
+        "nodemon": "^2.0.2"
+    }
+}
